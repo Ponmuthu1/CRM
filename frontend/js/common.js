@@ -165,9 +165,9 @@ function formatDate(dateString) {
 }
 
 function formatCurrency(amount) {
-    return new Intl.NumberFormat('en-US', {
+    return new Intl.NumberFormat('en-IN', {
         style: 'currency',
-        currency: 'USD',
+        currency: 'INR',
         minimumFractionDigits: 2,
         maximumFractionDigits: 2
     }).format(amount);
