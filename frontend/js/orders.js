@@ -100,7 +100,7 @@ function loadOrders() {
             row.innerHTML = `
                 <td>${order.id}</td>
                 <td>${order.customer}</td>
-                <td>$${order.amount.toLocaleString('en-US', { minimumFractionDigits: 2 })}</td>
+                <td>₹${order.amount.toLocaleString('en-IN', { minimumFractionDigits: 2 })}</td>
                 <td>${orderDate}</td>
                 <td>${deliveryDate}</td>
                 <td><span class="badge badge-${order.status.toLowerCase()}">${order.status}</span></td>

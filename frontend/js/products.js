@@ -106,7 +106,7 @@ function loadProducts() {
                 <td>${product.id}</td>
                 <td>${product.name}</td>
                 <td>${product.category}</td>
-                <td>$${product.price.toLocaleString('en-US', { minimumFractionDigits: 2 })}</td>
+                <td>₹${product.price.toLocaleString('en-IN', { minimumFractionDigits: 2 })}</td>
                 <td>${product.sku}</td>
                 <td>${product.stock}</td>
                 <td><span class="badge badge-${product.status.toLowerCase()}">${product.status}</span></td>

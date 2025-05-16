@@ -335,7 +335,7 @@ function populateDealsList(deals) {
         row.innerHTML = `
       <td>${deal.title}</td>
       <td>${deal.customer ? deal.customer.name : '-'}</td>
-      <td>$${deal.value.toFixed(2)}</td>
+      <td>₹${deal.value.toFixed(2)}</td>
       <td><span class="badge badge-${deal.status.toLowerCase()}">${deal.status}</span></td>
       <td>${closeDate}</td>
       <td class="actions">

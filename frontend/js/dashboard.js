@@ -167,7 +167,7 @@ function initCharts() {
                                 },
                                 ticks: {
                                     callback: function (value) {
-                                        return '$' + value.toLocaleString();
+                                        return '₹' + value.toLocaleString();
                                     }
                                 }
                             },
@@ -214,7 +214,7 @@ function initCharts() {
                                 },
                                 ticks: {
                                     callback: function (value) {
-                                        return '$' + value.toLocaleString();
+                                        return '₹' + value.toLocaleString();
                                     }
                                 }
                             },

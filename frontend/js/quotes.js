@@ -95,7 +95,7 @@ function loadQuotes() {
             row.innerHTML = `
                 <td>${quote.id}</td>
                 <td>${quote.customer}</td>
-                <td>$${quote.amount.toLocaleString('en-US', { minimumFractionDigits: 2 })}</td>
+                <td>₹${quote.amount.toLocaleString('en-IN', { minimumFractionDigits: 2 })}</td>
                 <td>${createdDate}</td>
                 <td>${validUntil}</td>
                 <td><span class="badge badge-${quote.status.toLowerCase()}">${quote.status}</span></td>

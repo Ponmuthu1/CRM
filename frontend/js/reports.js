@@ -283,7 +283,7 @@ function drawSalesChart(canvas, data, period) {
 
         // Draw value
         ctx.font = '10px Arial';
-        ctx.fillText('$' + values[i].toLocaleString(), x + barWidth / 2 - 5, y - 5);
+        ctx.fillText('₹' + values[i].toLocaleString(), x + barWidth / 2 - 5, y - 5);
     }
 
     // Draw mock axes
@@ -410,7 +410,7 @@ function drawCustomersChart(canvas) {
 
         // Draw value
         ctx.font = '10px Arial';
-        ctx.fillText(values[i], x, y - 10);
+        ctx.fillText('₹' + values[i].toLocaleString(), x, y - 10);
     });
 
     ctx.strokeStyle = '#4a6cf7';
@@ -475,7 +475,7 @@ function drawProductsChart(canvas) {
 
         // Draw value
         ctx.textAlign = 'left';
-        ctx.fillText('$' + values[i].toLocaleString(), barWidth + 110, y + barHeight / 2 + 4);
+        ctx.fillText('₹' + values[i].toLocaleString(), barWidth + 110, y + barHeight / 2 + 4);
 
         y += barHeight + barSpacing;
     });
